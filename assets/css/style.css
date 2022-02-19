@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-:root {
-  --primary-color: linear-gradient(90deg,  #270683, #3f3fd1, rgb(30, 10, 141));;
-}
 
 * {
   box-sizing: border-box;
   outline: 0;
 }
 
+html {
+  --bg-color: #FCFCFC;
+  --bg-timer: #EBEBEB;
+  --color-headings: #0ac438;
+  --color-text: #333333;
+  --border-colors: #b4b3b3;
+  --bg-buttons: #4240402d; 
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
-  color: #fff;
+  background: var(--bg-color);
+  color: var(--color-text);
   font-family: 'Open sans', sans-serif;
   font-weight: 400;
   font-size: 1.3em;
@@ -23,7 +29,7 @@ body {
 .container {
   max-width: 300px;
   margin: 50px auto;
-  border: 1px solid #fff;
+  background: var(--bg-timer);
   border-radius: 50%;
   padding: 59px;
 
@@ -41,7 +47,6 @@ h1 {
 
 }
 
-
 .timer {
   font-size: 3em;
 }
@@ -56,10 +61,10 @@ h1 {
 .div-buttons button{
   all: unset;
   border-radius: 10px;
-  border: 1px solid #fff;
+  border: 1px solid var(--border-colors);
 
   padding: 0px 10px;
-  color: #fff;
+  color: var(--color-text);
   font-size: 18px;
   font-weight: lighter;
   height: 50px;
@@ -68,9 +73,58 @@ h1 {
 }
 
 .div-buttons button:hover {
-  background: rgba(255, 255, 255, 0.178);
+  background: var(--bg-buttons);
 }
 
-.zero {
+.toggle-mode {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.toggle-mode input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggle-mode label {
+  cursor: pointer;
+  width: 52px;
+  height: 27px;
+  background: gray;
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+.toggle-mode label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.toggle-mode input:checked + label {
+  background-color: var(--color-headings);
+}
+
+.toggle-mode input:checked + label::after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.toggle-mode label:active:after {
+  width: 45px;
+}
+
+.pause {
   color: #ff0000;
 }
