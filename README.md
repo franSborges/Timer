@@ -2,7 +2,7 @@
 Um projeto simples feito a fim de enriquecer mais os meus conhecimentos em manipulação de DOM em como usar funções callback como setInterval.
 
 
-![App Screenshot](https://github.com/franSborges/Timer/blob/main/media-readme/screencast-127.0.0.1_5500-2022.02.18-20_38_49.webm)
+![media video](https://github.com/franSborges/Timer/blob/main/media-readme/screencast-127.0.0.1_5500-2022.02.18-20_38_49.webm)
 
 
 
