@@ -7,13 +7,13 @@ Um Timer simples feito a fim de enriquecer mais os meus conhecimentos em manipul
 - Live previews
 - Fullscreen mode
 
+<p width = "1000" height = "400">
+  <img src = "media-readme/media-readme_screencast-127.0.0.1_5500-2022.02.18-20_38_49.gif">
+</p>
+
 
 ## 🛠 Skills
 Javascript, HTML, CSS..
-
-
-![light mode image](https://github.com/franSborges/Timer/blob/main/media-readme/1645230897251.png)
-![Dark mode image](https://github.com/franSborges/Timer/blob/main/media-readme/1645230980307.png)
 
 
 
