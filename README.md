@@ -1,5 +1,5 @@
 # Timer
-Um Timer simples feito a fim de enriquecer mais os meus conhecimentos em manipulação de DOM usando JavaScript e em como usar funções callback como setInterval.
+Um Timer simples, com manipulação de DOM usando JavaScript e funções callback como setInterval.
 
 ## Features
 
